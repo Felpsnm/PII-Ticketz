@@ -1,0 +1,45 @@
+/* DESLIZE DE CORES NAS LETRAS */
+.hover {
+    color: #0000;
+    background: 
+      linear-gradient(90deg,gold 50%,#000 0) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .6s;
+  }
+  .hover:hover {
+    --_p: 0%;
+  }
+  
+
+  /* ICON BURGUER */
+  .burguerIcon{
+    display: inline-block;
+    cursor: pointer;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 0.9rem;
+    height: 0.03rem;
+    border: 0.0625rem solid rgba(4,4,5,0.1);;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }

@@ -1,0 +1,46 @@
+@import url(geral.css);
+main{
+    
+    display: grid;
+    grid-template-rows: 2.5fr  2.5fr  2.5fr  2.5fr ;
+    grid-template-areas: 
+    "anuncio1"
+    "anuncio2"
+    "anuncio3"
+    "anuncio4";
+
+    max-width: 100%;
+    max-height: 100%;
+}
+.anuncio1,.anuncio2,.anuncio3,.anuncio4{
+     border:0.0625rem solid rgba(4, 4, 5, 0.1);
+     display: grid;
+     grid-template-columns:  2.5fr  2.5fr  2.5fr  2.5fr;
+     grid-template-areas: 
+     "ad1 ad2 ad3 ad4";
+}
+.ad1,.ad2,.ad3,.ad4{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    border: 0.0625rem solid rgba(4, 4, 5, 0.1);
+    justify-content: center;
+    align-items: center;
+    
+}
+.ad1{
+      /* ÁREA DE OCUPAÇÃO */
+    grid-area: ad1;
+}
+.ad2{
+      /* ÁREA DE OCUPAÇÃO */
+    grid-area: ad2;
+}
+.ad3{
+      /* ÁREA DE OCUPAÇÃO */
+    grid-area: ad3;
+}
+.ad4{
+      /* ÁREA DE OCUPAÇÃO */
+    grid-area: ad4;
+}

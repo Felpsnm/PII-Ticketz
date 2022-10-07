@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gridHome.css">
+    <link rel="stylesheet" href="effects/carousel.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <div class="search-bar"> <input type="search" name="pesquisa" id="searchBar"
+                    placeholder="Pesquisar Eventos"> </div>
+            <!-- <div class="logo"> </div> -->
+            <nav>
+                <ul class="nav-space">
+                    <li class="nav-item">Sobre Nós</li>
+                    <li class="nav-item">Acessar Conta</li>
+                    <li ondblclick="b()" onclick="a()" id="nav-item-evento">Eventos</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="sub-header">
+            <ul>
+                <li class="nav-item">Festa Universitária</li>
+                <li class="nav-item">Shows</li>
+                <li class="nav-item">Festival</li>
+                <li class="nav-item">Teatro</li>
+            </ul>
+
+        </div>
+        <!-- <div class="sub-header"></div> -->
+    </header>
+    <main>
+        <div class="carousel"><input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="img/evento1.jpg">
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                    <img src="img/evento2.jpg">
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                    <img src="img/evento3.jpg">
+                </label>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="icons"></div>
+    </main>
+    <!-- <aside class="one">
+    </aside>
+    <aside class="two">
+    </aside>
+    <footer>
+    </footer> -->
+    <script>
+        let evento = document.getElementById('nav-item-evento');
+        let subheader = document.getElementById('sub-header');
+        function a() {
+            subheader.style.display = "flex";
+            evento.style.fontSize = "150%"
+
+        }
+        function b() {
+            subheader.style.display = "none";
+            subheader.style.animationDelay = '3s';
+            evento.style.fontSize = "1.2rem "
+        }   
+    </script>
+
+</body>
+
+</html>

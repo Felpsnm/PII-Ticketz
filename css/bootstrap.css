@@ -1,0 +1,218 @@
+@import url('carousel-btst.css');
+@import url("user-icon.css");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    border: 0.0625rem solid rgba(4, 4, 5, 0.1);
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+}
+
+body {
+    width: fit-content;
+    height: auto;
+
+}
+
+/* CSS - CABEÇALHO */
+#header-body {
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 20%;
+    border-top: 0;
+    
+
+}
+
+#header-header {
+    width: 100%;
+    border-top: 0;
+
+
+}
+
+#logo {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+#pesquisa-sp{
+   
+}
+.search-bar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+input#pesquisa {
+    outline: 0;
+    width: 60%;
+    height: 30%;
+    border: 0.0625rem solid rgba(4, 4, 5, 0.1);
+    border-radius: 1rem;
+}
+
+input#pesquisa:hover {
+    border-color: gold;
+}
+
+#nav {
+ 
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.nav ul {
+
+    width: 100%;
+    /* background-color: bisque; */
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+#evento-bt {
+    margin-right: 10% !important;
+}
+
+#evento-bt:hover {
+    color: gold;
+}
+
+.perfil-bt {
+    margin-left: 10%;
+}
+
+#header2-body {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    height: 5%;
+    border-bottom: 0.0625rem solid rgba(4, 4, 5, 0.1);
+
+
+}
+
+/* CSS - PRINCIPAL */
+#main {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    max-width: 100%;
+    height: 100%;
+
+
+}
+
+#main-main {
+    width: 100%;
+
+}
+
+#main-content {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+        "carousel"
+        "event-img";
+}
+
+.carousel {
+    grid-area: carousel;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 5%;
+}
+
+.cards {
+    display: flex;
+    max-width: 50%;
+    height: 70%;
+
+    border: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 0;
+    box-sizing: 0;
+}
+
+.card {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+#ev1{
+    height: 100%;
+}
+
+
+#event-img{
+    grid-area: event-img;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+img#ab{
+    width: 100%;
+    height: 100%;
+
+}
+#btst {
+    height: 100%;
+
+}
+#event-event{
+    width: 100%;
+}
+
+
+/* CSS - RODAPÉ */
+#footer {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    top: 150%;
+
+
+
+}
+
+#footer-footer {
+    display: flex;
+    width: 100%;
+}
+
+#termos {}
+
+#sobreNos {}
+
+#atalhos {}
+
+}

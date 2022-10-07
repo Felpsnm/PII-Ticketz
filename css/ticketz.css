@@ -1,0 +1,221 @@
+
+
+:root {
+
+    background-color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+*{
+    font-family: 'Rubik', sans-serif;
+    border-color: ;
+}
+body {
+
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 5% 75% 10%;
+
+    width: 100%;
+    height: 100%;
+
+
+    margin: 0;
+    padding: 0;
+    border: 0.0625rem solid rgba(4, 4, 5, 0.1);
+    box-sizing: border-box;
+
+}
+
+/* ,#principal-eventos,#principal-sobreNos */
+main {
+
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 80% 20%;
+
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+main>nav#carousel {
+
+    /* grid-row-start: 2;
+    grid-row-end:3; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: flex-start;
+    justify-items: center;
+
+
+}
+
+/* #principal-sobreNos{
+
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows:20% 60% 20%;
+
+}
+
+#pessoasIcon-evento{
+
+    display: grid;
+    grid-column-end:2 ;
+    grid-column-start:3 ;
+    grid-row-start:3 ;
+    grid-row-end: 4;
+
+}
+
+#eventosIcon{
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    grid-column-end:2 ;
+    grid-column-start:3 ;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+
+}
+
+#principal-eventos{
+
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows:40% 20% 40%;
+
+}
+
+#foto-evento{
+
+    display:flex;
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    
+} */
+
+header {
+
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+
+    border-bottom: 0.0625rem solid rgba(4, 4, 5, 0.1);
+
+}
+
+header>#TicketzLogo {
+
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+
+}
+
+header>#search-bar {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+input#searchBar {
+    width: 50%;
+    height: 50%;
+
+    border: 0.0625rem solid rgba(4, 4, 5, 0.1);
+    border-radius: 0.3125rem;
+
+
+}
+
+input#searchBar:focus {
+    outline: 0.1rem solid gold;
+    border: 0;
+}
+
+header>nav {
+
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+ul.nav-space {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-items: space-between;
+    left: 0;
+    flex-wrap: nowrap;
+}
+
+li.nav-item,
+li#nav-item-evento {
+    padding-right: 10%;
+    font-size: 120%;
+    font-weight: 500;
+    user-select: none;
+    flex-wrap: nowrap; 
+    word-break: keep-all;
+}
+
+li.nav-item:hover,
+li#nav-item-evento:hover {
+    color: gold;
+}
+
+header#sub-header {
+    display: none;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    background-color: none;
+    border-bottom: 0.0625rem solid rgba(4, 4, 5, 0.1);
+
+}
+
+/* .sub-header li.nav-item{
+ 
+} */
+.sub-header li.nav-item:hover {
+    color: #FFFFFF;
+    transition-delay: 4ms;
+}

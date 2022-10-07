@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                    <span class="title">Festa Universitária</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                    <span class="title">Shows</span>
+                </a>
+            </li>
+       
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                    <span class="title">Eventos Esportivos</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                    <span class="title">Festivais</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                    <span class="title">Eventos de Anime</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script >
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation')
+            navigation.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>

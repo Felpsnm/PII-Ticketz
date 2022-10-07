@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Ticketz</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/sidebar.js">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="principal">
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar Eventos" id="pesquisa">
+        </div>
+        <div class="logo">
+            <h1>Ticketz</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li id="evento-bt" onclick="eventoEffect() " ondblclick="eventoEffect2()">Eventos</li>
+                <li class="perfil-bt"><i class="gg-user-list"></i></li>
+            </ul>
+        </div>
+    </header>
+    <div class="sub-header"></div>
+    </header>
+    <main>
+        <div class="carousel">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="img/evento1.jpg">
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                    <img src="img/evento2.jpg">
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                    <img src="img/evento3.jpg">
+                </label>
+
+            </div>
+        </div>
+        <div class="event-image-icon">
+            <div class="event-img"></div>
+            <div class="event-img"></div>
+            <div class="event-img"></div>
+            <div class="event-img"></div>
+        </div>
+    </main>
+    <aside id="menu-suspenso">
+        <div class="barra-lateral">
+            <nav id="menu">
+                <ul>
+                    <li class="event-option">FESTA UNIVERSITÁRIA</li>
+                    <li class="event-option">SHOWS</li>
+                    <li class="event-option">EVENTOS</li>
+                    <li class="event-option">FESTIVAIS</li>
+                    <li class="event-option">EVENTOS DE ANIME</li>
+                </ul>
+            </nav>
+
+        </div>
+    </aside>
+    <footer>
+        <div class="termos"></div>
+        <div class="sobreNos"></div>
+        <div class="atalhos"></div>
+    </footer>
+    <script>
+        let eventoBtn = document.getElementById('event-bt');
+        let aside = document.getElementById('menu-suspenso')
+        let a = document.querySelector('.event-option')
+        let nave = document.getElementById('menu')
+        function eventoEffect(){
+         a.classList.toggle('active')
+         nave.style.visibility='visible' }
+        function eventoEffect2(){
+         nave.style.visibility='hidden'}
+    </script>
+
+</body>
+
+</html>
