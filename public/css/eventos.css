@@ -1,0 +1,54 @@
+@import url('base.css');
+div#main-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+}
+div#main-row div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+div#main-row div article img {
+    display: flex;
+    border-radius: 2rem;
+    width: 100%;
+
+
+}
+div#main-row div article p {
+    margin: 0 auto;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+div#main-row div article a {
+    display: flex;
+    text-decoration: none;
+}
+
+
+div#main-row div article {
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid rgba(4, 4, 5, 0.1);
+    border-radius: 2rem;
+    row-gap: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/* EFEITOS */
+div#main-row div article p:hover {
+    color: #FFA800;
+}
+
+div#main-row  div article:hover {
+    box-shadow: #FFA800 0px 25px 20px -20px;
+
+}
+
+
+a:link{
+    text-decoration: none;
+}

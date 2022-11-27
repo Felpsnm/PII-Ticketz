@@ -1,0 +1,39 @@
+@import url('base.css');
+
+main #main-row{
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+}
+main #main-row article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 15rem;
+    border: 0.1rem solid #FFA800;
+    border-radius: 2rem;
+    row-gap: 2rem;
+}
+main #main-row article:hover{
+    border-color: transparent;
+}
+main #main-row article>div{
+    display: flex;
+    column-gap: 1rem;
+
+}
+main #main-row article div p{
+    display: flex;
+}
+main #main-row article div p:hover{
+    color: #FFA800;
+}
+main #main-row article div h3{
+    display: flex;
+}
+main #main-row article div h3:hover{
+    text-decoration: underline;
+    text-decoration-color: #FFA800;
+}
+

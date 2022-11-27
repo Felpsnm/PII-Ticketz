@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Criar Conta- Ticketz</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="row-content-page">
+            <header class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0 m-0" id="header-container">
+                        <div class="row" id="header-row">
+                            <div class=" d-flex justify-content-center align-items-center col-2 col-sm-2 col-md-2 col-lg-2 p-0 m-0 order-1"
+                                id="logo">
+                                <button>
+                                    <a href="/html/homepage2.html">
+                                        <h1>Ticketz</h1>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center col-6 col-sm-7 col-md-7 col-lg-7  p-0 m-0 order-2"
+                                id="pesquisa-sp">
+                                <div class="space-search"> <input type="text" placeholder="Pesquisar Eventos"
+                                        id="pesquisa">
+                                    <i class="gg-search"></i>
+                                </div>
+                            </div>
+                            <nav class=" d-flex justify-content-center align-items-center col-4 col-sm-3 col-md-3 col-lg-3  p-0 m-0 order-3"
+                                id="nav-sp">
+                                <ul>
+                                    <li> <button id="evento-bt" onclick="eventoEffect() "
+                                            ondblclick="noneEffect()">Eventos
+                                        </button></li>
+                                    <li> <button id="perfil-bt" onclick="userEffect() " ondblclick="noneEffect()"><i
+                                                class="gg-user-list"></i>
+                                        </button></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div class="col-12 justify-content-center align-items-center" id="header2-container">
+                        <ul>
+                            <li><a href="/html/eventos.html">Shows</a></li>
+                            <li> <a href="/html/eventos.html"> Festivais</a></li>
+                            <li> <a href="/html/eventos.html"> Universitárias</a></li>
+                            <li> <a href="/html/eventos.html">Esportivo</a></li>
+                            <li> <a href="/html/eventos.html">Teatro & Musical</a></li>
+                            <li> <a href="/html/eventos.html">E-sports</a></li>
+                            <li> <a href="/html/eventos.html">Sertanejo & Pagode</a></li>
+                            <li> <a href="/html/eventos.html">Empresarial</a></li>
+                        </ul>
+                    </div>
+                    <!-- BOOTSTRAP CABEÇALHO SECUNDÁRIO -->
+
+                </div>
+
+            </header>
+
+            <main class="container-fluid" id="main-container">
+                <div class="row" id="main-row">
+                    <div class="col-sm-12 col-md-10 col-lg-10 m-0" id="main-content">
+                        <form method="POST" action="/registro" id="reg-form">
+                            <h1 id="page-title">Criar Conta:</h1>
+                            <label for="username">Nome do Usuário:
+                                <div class="form-email">
+                                    <i class="fa-regular fa-user"></i>
+                                    <input type="text" name="name" placeholder="Digitar o Nome" autocomplete="off"
+                                        id="name" oninput="checarNome()" required>
+
+                                </div>
+                            </label>
+                            <ul id="rules">
+                                <li id="rule-one-name"><i id="check" class="fa-solid fa-check"></i>Apenas
+                                    letras alfabéticas
+                                </li>
+                                <li id="rule-two-name"><i id="check" class="fa-solid fa-check"></i>De 5 a 15
+                                    caracteres
+                                </li>
+                            </ul>
+                            <label for="username">Email do Usuário:
+                                <div class="form-email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <input type="email" name="email" placeholder="Digitar o Email" autocomplete="off"
+                                        id="email" required>
+
+                                </div>
+                            </label>
+                            <label for="password">Senha:
+                                <div class="form-senha">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input id="password" type="password" name="password" placeholder="Digitar a Senha"
+                                        oninput="checarSenha()" required>
+
+                                    <span onclick="mostrarSenha()">
+                                        <i id="hide1" class="fa-regular fa-eye"></i>
+                                        <i id="hide2" class="fa-regular fa-eye-slash"></i>
+                                    </span>
+
+                                </div>
+                            </label>
+                            <ul id="rules">
+                                <li id="rule-one"><i id="check" class="fa-solid fa-check"></i>De 8 a 24 caracteres
+                                </li>
+                                <li id="rule-two"><i id="check" class="fa-solid fa-check"></i>Letras maiúsculas e
+                                    minúsculas
+                                </li>
+                                <li id="rule-three"><i id="check" class="fa-solid fa-check"></i>Conter pelo menos
+                                    1 número
+                                </li>
+                            </ul>
+
+                            <label for="username">
+                                <ul>
+                                    <li>Selecionar Rede Social:</li>
+                                    <li> <i class="fa-brands fa-instagram" id="insta" onclick="selecionar()"></i></li>
+                                    <li> <i class="fa-brands fa-twitter" id="twitter" onclick="selecionar()"></i></li>
+                                    <li><i class="fa-brands fa-facebook" id="face" onclick="selecionar()"></i>
+                                </ul>
+                                <div class="form-text">
+                                    <input type="text" name="socialmedia"
+                                        placeholder="Digitar o Nome da Conta (Exemplo: @NomeDaConta)" id="social-media"
+                                        required>
+                                </div>
+                            </label>
+                            <p id="aviso">Aviso! Antes de criar sua conta , é IMPORTANTE ler o texto de "Termos e
+                                Serviços" localizado no canto inferior direito do site, ou selecione esse <a
+                                    href="/html/termos.html">encurtador</a>. Ao ler o texto, você estará de
+                                acordo com as políticas de termos de uso. </p>
+                            <button type="submit" onclick="checarLogin()">Criar Conta</button>
+                        </form>
+                    </div>
+                </div>
+
+            </main>
+            <footer class="container-fluid" id="footer-container">
+                <div class="row" id="footer-row">
+                    <article class="col-sm-12 col-md-4 col-lg-4 order-3" id="terms-class">
+                        <h3>Termos</h3>
+                        <section>
+                            <a href="/html/termos.html">
+                                <p>Termos e Serviços</p>
+                            </a>
+                            <a href="/html/privacidade.html">
+                                <p>Privacidade do Usuário</p>
+                            </a>
+                        </section>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4  order-2" id="shortcuts-class">
+                        <h3>Atalhos</h3>
+                        <ul>
+                            <a href="/html/homepage2.html">
+                                <li>
+                                    <p>Página Inicial</p>
+                                </li>
+                            </a>
+                            <a href="/html/comoFunciona.html">
+                                <li>
+                                    <p>Perguntas Frequentes</p>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <p>Eventos Principais</p>
+                                </li>
+                            </a>
+                        </ul>
+
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4  order-1" id="aboutUs-class">
+                        <h3>Sobre Nós</h3>
+                        <section>
+                            <p>Somos a solução para o mercado digital de tickets e ingressos, disponibilizando uma
+                                plataforma moderna que permite que o comprador encontre um vendedor. Tudo isso com
+                                praticidade e
+                                segurança.</p>
+                        </section>
+                        <label for="social-media"> Nossas Redes Sociais:
+                            <div class="social-media">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                            </div>
+                        </label>
+                    </article>
+            </footer>
+        </div>
+    </div>
+    <script src="/js/registro.js"></script>
+    <script src="/js/ticketz.js">
+
+    </script>
+     <!-- VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+ 
+
+</body>
+
+</html>

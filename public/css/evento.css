@@ -1,0 +1,95 @@
+@import url('base.css');
+#anuncios{
+    display: flex;
+    row-gap:5rem;
+    justify-content: center;
+    align-items: center;
+}
+#vendedor-desc div#main-row{
+    display: flex;
+    justify-content:unset;
+    align-items: unset;
+    row-gap: 5rem;
+}
+#vendedor-desc div#main-row div{
+    display: flex;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+#vendedor-desc div#main-row div article{
+    padding: 1rem;
+}
+#anuncios>div{
+    display: flex;
+    column-gap: 2rem;
+}
+#anuncios>div img{
+    width:50%;
+    height:20rem;
+    border-radius: 1.5rem;
+}
+#anuncios h1{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    text-decoration: none;
+}
+h1#page-title{
+    color:#3a3939;
+    text-decoration: underline;
+    text-decoration-color: #FFA800;
+}
+#anuncios>div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+   
+
+}
+#anuncios div article{
+    border-radius: 2rem;
+    row-gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    
+}
+
+#anuncios div article p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1393px ) { 
+    #anuncios div#main-row>div{
+        flex-direction: column;
+    }
+    #anuncios>div{
+        flex-direction: column;
+        
+    }
+    #anuncios>div img{
+         width: 100%;
+    }
+    #anuncios>div h1{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+ }
+ /* EFEITOS */
+ a:link {
+    color: #FFA800;
+    text-decoration: none;
+}
+#anuncios div article:hover{
+    box-shadow:gold 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}

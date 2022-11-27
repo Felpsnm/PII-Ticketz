@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/evento.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Evento- Ticketz</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="row-content-page">
+            <header class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0 m-0" id="header-container">
+                        <div class="row" id="header-row">
+                            <div class=" d-flex justify-content-center align-items-center col-2 col-sm-2 col-md-2 col-lg-2 p-0 m-0 order-1"
+                                id="logo">
+                                <button>
+                                    <a href="/html/homepage2.html">
+                                        <h1>Ticketz</h1>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center col-6 col-sm-7 col-md-7 col-lg-7  p-0 m-0 order-2"
+                                id="pesquisa-sp">
+                                <div class="space-search"> <input type="text" placeholder="Pesquisar Eventos"
+                                        id="pesquisa">
+                                    <i class="gg-search"></i>
+                                </div>
+                            </div>
+                            <nav class=" d-flex justify-content-center align-items-center col-4 col-sm-3 col-md-3 col-lg-3  p-0 m-0 order-3"
+                                id="nav-sp">
+                                <ul>
+                                    <li> <button id="evento-bt" onclick="eventoEffect() "
+                                            ondblclick="noneEffect()">Eventos
+                                        </button></li>
+                                    <li> <button id="perfil-bt" onclick="userEffect() " ondblclick="noneEffect()"><i
+                                                class="gg-user-list"></i>
+                                        </button></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div class="col-12 justify-content-center align-items-center" id="header2-container">
+                        <ul>
+                            <li><a href="/html/eventos.html">Shows</a></li>
+                            <li> <a href="/html/eventos.html"> Festivais</a></li>
+                            <li> <a href="/html/eventos.html"> Universitárias</a></li>
+                            <li> <a href="/html/eventos.html">Esportivo</a></li>
+                            <li> <a href="/html/eventos.html">Teatro & Musical</a></li>
+                            <li> <a href="/html/eventos.html">E-sports</a></li>
+                            <li> <a href="/html/eventos.html">Sertanejo & Pagode</a></li>
+                            <li> <a href="/html/eventos.html">Empresarial</a></li>
+                        </ul>
+                    </div>
+                    <!-- BOOTSTRAP CABEÇALHO SECUNDÁRIO -->
+
+                </div>
+
+            </header>
+            <!-- CONTEÚDO PRINCIPAL -->
+            <main id="main-container" class="container-fluid">
+                <div class="row" id="anuncios">
+                    <div class="col-sm-12 col-md-10 col-lg-10 m-0"><img src="/img/eventosImg.jpeg
+                " alt="">
+                        <h1>Show Jorge e Matheus, Ingressos</h1>
+                    </div>
+                    <div class="col-sm-12 col-md-10 col-lg-10 m-0" id="vendedor-desc">
+                        <div class="row" id="main-row">
+                            <h1 id="page-title">Ingressos Disponíveis:</h1>
+                            <div class="col-12 m-0">
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 1</h3>
+                                        <h3>Tipo: Meia</h3>
+                                        <h3>Preço: 65</h3>
+                                    </article>
+                                </a>
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 2</h3>
+                                        <h3>Tipo: Meia</h3>
+                                        <h3>Preço: 70</h3>
+                                    </article>
+                                </a>
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 1</h3>
+                                        <h3>Tipo: Inteira</h3>
+                                        <h3>Preço: 110</h3>
+                                    </article>
+                                </a>
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 3</h3>
+                                        <h3>Tipo: Inteira</h3>
+                                        <h3>Preço:115</h3>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="col-12 m-0">
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 1</h3>
+                                        <h3>Tipo: Meia</h3>
+                                        <h3>Preço: 55</h3>
+                                    </article>
+                                </a>
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 1 </h3>
+                                        <h3>Tipo: Inteira</h3>
+                                        <h3>Preço:125</h3>
+                                    </article>
+                                </a>
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 1 </h3>
+                                        <h3>Tipo: Meia</h3>
+                                        <h3>Preço: 60</h3>
+                                    </article>
+                                </a>
+                                <a href="/html/vendedor.html">
+                                    <article>
+                                        <h3>Ingressos: 1</h3>
+                                        <h3>Tipo: Inteira</h3>
+                                        <h3>Preço: 120</h3>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+            <footer class="container-fluid" id="footer-container">
+                <div class="row" id="footer-row">
+                    <article class="col-sm-12 col-md-4 col-lg-4 order-3" id="terms-class">
+                        <h3>Termos</h3>
+                        <section>
+
+                            <a href="/html/termos.html">
+                                <p>Termos e Serviços</p>
+                            </a>
+                            <a href="/html/privacidade.html">
+                                <p>Privacidade do Usuário</p>
+                            </a>
+
+                        </section>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4  order-2" id="shortcuts-class">
+                        <h3>Atalhos</h3>
+                        <ul>
+                            <a href="/html/homepage2.html">
+                                <li>
+                                    <p>Página Inicial</p>
+                                </li>
+                            </a>
+                            <a href="/html/comoFunciona.html">
+                                <li>
+                                    <p>Perguntas Frequentes</p>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <p>Eventos Principais</p>
+                                </li>
+                            </a>
+                        </ul>
+
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4  order-1" id="aboutUs-class">
+                        <h3>Sobre Nós</h3>
+                        <section>
+                            <p>Somos a solução para o mercado digital de tickets e ingressos, disponibilizando uma
+                                plataforma moderna que permite que o comprador encontre um vendedor. Tudo isso com
+                                praticidade e
+                                segurança.</p>
+                        </section>
+                        <label for="social-media"> Nossas Redes Sociais:
+                            <div class="social-media">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                            </div>
+                        </label>
+                    </article>
+            </footer>
+        </div>
+    </div>
+    <script src="/js/ticketz.js">    </script>
+ <!-- VLIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>

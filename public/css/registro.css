@@ -1,0 +1,46 @@
+@import url('login.css');
+@import url('vendedor.css');
+ul#rules{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem; 
+    line-height: 1;
+    
+}
+ul#rules li{
+    display: flex;
+    column-gap: .5rem;
+    list-style: none;
+    font-size: 1rem;
+    align-items: center;
+}
+ul#rules li i{
+    color: red;
+}
+
+label ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    padding-left: 0;
+}
+
+#reg-form{
+    border: 0.0625rem solid black;
+}
+p#aviso{
+    color: red;
+    text-decoration: underline;
+    font-size: 1rem;
+    word-spacing: 2px;
+}
+p#aviso a{
+    color: black; 
+    font-size: 1rem;
+}
+/* EFEITOS */
+form input:hover{
+    border-color: #FFA800;
+}
+
+

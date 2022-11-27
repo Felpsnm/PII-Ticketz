@@ -1,0 +1,389 @@
+@import url('carousel.css');
+@import url("user-icon.css");
+@import url('https://css.gg/search.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('scroll.css');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    user-select: none;
+    line-height: 2;
+    color: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: .5s;   
+
+}
+h1{
+    text-decoration: underline;
+    text-decoration-color: #FFA800;
+}
+/* CSS - BOOTSTRAP */
+.row,
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#page-title{
+    color:#3a3939;
+    text-decoration: underline;
+    text-decoration-color: #FFA800;
+
+}
+#row-content-page {
+    display: flex;
+    row-gap: 15rem;
+}
+
+/* CSS - CABEÇALHO ESPAÇO */
+header#header-container {
+    width: 100%;
+    display: flex;
+    background-color: #FFA800;
+}
+header>div {
+    width: 100%;
+}
+
+
+/* CSS - LOGO DO SITE */
+div#header-row #logo a h1{
+    display: flex;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    max-height: 80%;
+    max-width: 80%;
+    font-size: 110%;
+    transition: .5s;
+}
+
+
+/* CSS - BARRA DE PESQUISA */
+div#pesquisa-sp .space-search {
+    padding: 0 1rem;
+    border-radius: 1rem;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    column-gap: 1rem;
+}
+
+
+div#pesquisa-sp .space-search i {
+    margin-left: 0;
+}
+
+
+/* CSS - BARRA DE PESQUISA */
+div.space-search input#pesquisa {
+    flex: 1;
+    outline: 0;
+    width: 100%;
+    height: 90%;
+    border: 0;
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+    color: black;
+
+}
+
+/*  CSS - BARRA DE NAVEGAÇÃO */
+nav#nav-sp ul {
+
+    width: 100%;
+    height: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+nav#nav-sp ul li {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTÃO EVENTO QUE ACIONA JS */
+nav#nav-sp ul li#evento-bt {
+    font-size: 100%;
+    margin-right: 10%;
+    transition: .5s;
+}
+
+/* CSS - EFEITO BOTAO HEADER*/
+
+li.perfil-bt {
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    margin-left: 10%;
+    transition: .5s;
+}
+
+i.gg-user-list {
+    transition: .5s;
+    color: black;
+}
+/* CABEÇALHO ACIONADO PELO EVENTO-BT */
+div#header2-container {
+    display: none;
+    height: 10%;
+    width: 100%;
+
+}
+
+div#header2-container>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10%;
+    border-bottom: .1rem solid #FFA800;
+    padding: 1rem;
+
+}
+div#header2-container>ul>li{
+    display: flex;
+    width: auto;
+    border-right: .1rem solid #FFA800;
+    padding-right: .5rem;
+    
+}
+div#header2-container>ul>li>a {
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+/* CSS - PRINCIPAL */
+main#main-container {
+    display: flex;
+    width: 100%;
+}
+
+main div#main-row {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+div#main-row div#main-content {
+    display: flex;
+    flex-direction: column;
+    column-gap: 4rem;
+    row-gap: 2rem;
+
+}
+
+/* CSS -CAROUSEL */
+div.carousel {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+div.carousel .imgs {
+    display: flex;
+
+}
+
+div.imgs .img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+
+}
+
+/* CSS - ICONES EVENTOS MAIN */
+div#eventos-container div#event-row {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    text-align: start;
+    display: flex;
+    row-gap: 1rem;
+}
+
+div#event-row section {
+    display: flex;
+    column-gap: 2rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* div#event-row section article a{
+    
+} */
+div#event-row section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid rgba(4, 4, 5, 0.1);
+    border-radius: 2rem;
+    height: 18.8rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+div#event-row section article p {
+    display: flex;
+    margin: 0 auto;
+    height: 50%;
+
+}
+
+div#event-row section article img {
+    width: 100%;
+    height: 50%;
+    border-radius: 2rem;
+}
+
+div#eventos-container {
+    grid-area: event-img;
+    width: 100%;
+
+
+}
+
+
+/* CSS - RODAPÉ */
+footer#footer-container {
+    width: 100%;
+    background-color: black;
+    border-top: .2rem solid #FFA800
+}
+
+
+
+article#terms-class,
+article#shortcuts-class,
+article#aboutUs-class {
+    color: #ffff;
+    text-align: left;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+footer div#footer-row p {
+    display: flex;
+    color: #ffff;
+    font-size: 1rem;
+
+}
+
+footer div#footer-row h3 {
+    display: flex;
+    color: #FFA800;
+}
+
+footer article#shortcuts-class li {
+    color: white;
+    list-style: disc;
+
+
+}
+
+
+
+div.social-media {
+    display: flex;
+    column-gap: 1rem;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.social-media i {
+    color: white;
+}
+
+#aboutUs-class label {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    width: fit-content;
+    border: 0.1rem solid gold;
+}
+
+/* EFEITOS */
+div#pesquisa-sp .space-search:hover {
+    border: .1rem solid black;
+}
+
+li#evento-bt:hover,
+.perfil-bt i:hover {
+    color: #ffff;
+}
+div#logo a h1:hover{
+    color: #ffff;
+}
+
+
+div#header2-container>ul>li>a:hover {
+    color: #FFA800;
+
+}
+
+div#event-row section article:hover {
+    box-shadow: #FFA800 0px 25px 20px -20px;
+}
+
+
+div.social-media i:hover {
+    color: #FFA800;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+article#shortcuts-class a:link {
+    text-decoration: underline;
+    color: #FFA800;
+    text-decoration-color: #FFA800;
+}
+article#shortcuts-class a:hover{
+    color: #FFA800;
+    text-decoration-color: black;
+}

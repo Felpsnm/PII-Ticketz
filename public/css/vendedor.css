@@ -1,0 +1,78 @@
+@import url('base.css');
+#texto-vendedor,
+#desc2-vendedor {
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    padding: 1rem;
+}
+
+main div.row {
+    display: flex;
+    row-gap: 5rem;
+}
+
+#texto-vendedor article,
+#desc2-vendedor article {
+    height: 40%;
+    border-color: black;
+    border: .1rem solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+    row-gap: .5rem;
+   
+}
+#texto-vendedor article:hover{
+    border-color: #FFA800;
+}
+
+
+#texto-vendedor article p {
+    display: flex;
+    color: black;
+}
+
+#texto-vendedor header {
+    display: flex;
+
+}
+
+#anuncio-vendedor {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+
+}
+
+#anuncio-vendedor img {
+    width: 50%;
+    height: 20rem;
+    border-radius: 1.5rem;
+}
+
+#anuncio-vendedor h1 {
+    display: flex;
+    align-items: center;
+   
+}
+
+#main-container {
+    width: 100%;
+}
+
+#desc1-vendedor{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+#texto-vendedor>div.row{
+    display: flex;
+    column-gap: 10rem;
+}
+
+/* EFEITOS */
+#texto-vendedor button:hover {
+    color: white;
+    border-color: #FFA800;
+}
